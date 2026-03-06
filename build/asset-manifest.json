@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Hokkaido/static/css/main.6163153d.css",
+    "main.js": "/Hokkaido/static/js/main.e2768172.js",
+    "index.html": "/Hokkaido/index.html",
+    "main.6163153d.css.map": "/Hokkaido/static/css/main.6163153d.css.map",
+    "main.e2768172.js.map": "/Hokkaido/static/js/main.e2768172.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6163153d.css",
+    "static/js/main.e2768172.js"
+  ]
+}
