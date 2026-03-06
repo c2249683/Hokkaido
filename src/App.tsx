@@ -584,9 +584,9 @@ const THEME_MAP = {
   hotel: { bg: "#A855F7", icon: Hotel },
 };
 
-const DetailModal = ({ item, onClose }) => {
+const DetailModal = ({ item, onClose }: { item: any; onClose: () => void }) => {
   if (!item) return null;
-  const theme = THEME_MAP[item.type] || THEME_MAP.spot;
+  const theme = (THEME_MAP as any)[item.type] || THEME_MAP.spot;
   return (
     <AnimatePresence>
       <motion.div
@@ -639,11 +639,11 @@ const DetailModal = ({ item, onClose }) => {
 export default function TravelApp() {
   const [activeTab, setActiveTab] = useState("plan");
   const [dayIdx, setDayIdx] = useState(0);
-  const [selectedItem, setSelectedItem] = useState(null);
-  const [checkedItems, setCheckedItems] = useState({});
+  const [selectedItem, setSelectedItem] = useState<any>(null);
+  const [checkedItems, setCheckedItems] = useState<Record<string, boolean>>({});
 
   const currentDay = useMemo(() => TRAVEL_DATA[dayIdx], [dayIdx]);
-  const toggleCheck = (item) =>
+  const toggleCheck = (item: string) =>
     setCheckedItems((prev) => ({ ...prev, [item]: !prev[item] }));
 
   return (
@@ -745,7 +745,7 @@ export default function TravelApp() {
                 </div>
               </div>
               {currentDay.items.map((item, i) => {
-                const theme = THEME_MAP[item.type] || THEME_MAP.spot;
+                const theme = (THEME_MAP as any)[item.type] || THEME_MAP.spot;
                 const Icon = theme.icon;
                 return (
                   <motion.div
