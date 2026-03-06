@@ -1,21 +1,21 @@
 {
-    "short_name": "北海道行程",
-    "name": "2026 北海道冬季之旅",
-    "icons": [
-      {
-        "src": "logo.png",
-        "sizes": "192x192",
-        "type": "image/png"
-      },
-      {
-        "src": "logo.png",
-        "sizes": "512x512",
-        "type": "image/png",
-        "purpose": "any maskable"
-      }
-    ],
-    "start_url": "./",
-    "display": "standalone",
-    "theme_color": "#4A90E2",
-    "background_color": "#ffffff"
-  }
+  "short_name": "北海道行程",
+  "name": "2026 北海道冬季之旅",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "./",
+  "display": "standalone",
+  "theme_color": "#4A90E2",
+  "background_color": "#ffffff"
+}
