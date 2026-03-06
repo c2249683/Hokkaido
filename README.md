@@ -1,2 +1,0 @@
-# Hokkaido
-Created with CodeSandbox
